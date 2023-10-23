@@ -24,6 +24,8 @@ $ antsRegistration --dimensionality 3 --float 0 --interpolation Linear --winsori
 
 ```bash
 $ export InputCsv=”./cells.csv”
+
 $ export OutputCsv=”./cells_transformed.csv”
+
 $ antsApplyTransformsToPoints -d 3 -i $InputCsv -o $OutputCsv -t [$outDir/F2M_0GenericAffine.mat,1] -t $outDir/F2M_1InverseWarp.nii.gz
 ```
